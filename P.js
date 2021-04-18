@@ -21,7 +21,7 @@ function startmove()
     document.addEventListener("mousemove", mouseMoveHandler);     
 
 //     addEventListener('touchstart', handleTouchStart);
-    addEventListener('touchmove', handleTouchMove);
+    document.addEventListener('touchmove', handleTouchMove);
 }
 
 // function handleTouchStart(e)
@@ -31,7 +31,7 @@ function startmove()
 
 function handleTouchMove(e)
 {
-    Tx = e.Touche.clientX - Tx;
+    Tx = e.Touche.clientX;
     if (Tx > 0 && Tx + pwidth < canvas.width)
     {
         px = Tx;
