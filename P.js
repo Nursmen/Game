@@ -20,14 +20,14 @@ function startmove()
     // document.addEventListener('keyup', keyUpHandler);
     document.addEventListener("mousemove", mouseMoveHandler);     
 
-    addEventListener('touchstart', handleTouchStart);
+//     addEventListener('touchstart', handleTouchStart);
     addEventListener('touchmove', handleTouchMove);
 }
 
-function handleTouchStart(e)
-{
-    Tx = e.changedTouches[0].clientX;
-}
+// function handleTouchStart(e)
+// {
+//     Tx = e.changedTouches[0].clientX;
+// }
 
 function handleTouchMove(e)
 {
