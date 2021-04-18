@@ -32,9 +32,9 @@ function startmove()
 function handleTouchMove(e)
 {
     Tx = e.changedTouches[0].clientX - Tx;
-    if (mousepos > 0 && mousepos + pwidth < canvas.width)
+    if (Tx > 0 && Tx + pwidth < canvas.width)
     {
-        px = mousepos;
+        px = Tx;
     }    
 }
 
