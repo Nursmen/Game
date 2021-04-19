@@ -20,8 +20,8 @@ function startmove()
     // document.addEventListener('keyup', keyUpHandler);
     document.addEventListener("mousemove", mouseMoveHandler);     
 
-    document.addEventListener('touchand', handleTouchEnd);
-    document.addEventListener('touchmove', handleTouchMove);
+//     document.addEventListener('touchand', handleTouchEnd);
+//     document.addEventListener('touchmove', handleTouchMove);
 }
 
 function handleTouchEnd(e)
