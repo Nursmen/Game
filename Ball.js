@@ -2,9 +2,9 @@ var x = getRandomInt(canvas.width);
 
 var y = canvas.height-30;
 
-let fordx = [-3, 3];
+let fordx = [-2.2, 2.2];
 var dx = fordx[Math.floor(Math.random() * 2)];
-var dy = -4;
+var dy = -3;
 
 let radius = 14;
 
