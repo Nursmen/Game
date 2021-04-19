@@ -32,7 +32,7 @@ function handleTouchEnd(e)
 
 function handleTouchMove(e)
 {
-    Tx = e.Touches[0].clientX;
+    Tx = e.Touches[-1].clientX;
     if (Tx > canvas.width/2)
     {
         Rpr = true;
