@@ -4,7 +4,7 @@ var y = canvas.height-30;
 
 let fordx = [-2.2, 2.2];
 var dx = fordx[Math.floor(Math.random() * 2)];
-var dy = -2;
+var dy = -2.2;
 
 let radius = 14;
 

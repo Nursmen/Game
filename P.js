@@ -20,26 +20,20 @@ function startmove()
     // document.addEventListener('keyup', keyUpHandler);
     document.addEventListener("mousemove", mouseMoveHandler);     
 
-    document.addEventListener('touchand', handleTouchEnd);
+    // document.addEventListener('touchand', handleTouchEnd);
     document.addEventListener('touchmove', handleTouchMove);
-}
-
-function handleTouchEnd(e)
-{
-    Rpr = false;
-    Lpr = true;
 }
 
 function handleTouchMove(e)
 {
-    Tx = e.Touches[-1].clientX;
-    if (Tx > canvas.width/2)
+    e.preventDefault(); // we don't want to scroll
+    let touch = e.touches[0];
+    let x = touch.clientX;
+
+    let mousepos = x - canvas.offsetLeft - pwidth/2;
+    if (mousepos > 0 && mousepos + pwidth < canvas.width)
     {
-        Rpr = true;
-    }
-    else if (Tx < canvas.width/2)
-    {
-        Lpr = true;
+        px = mousepos;
     }
 }
 
